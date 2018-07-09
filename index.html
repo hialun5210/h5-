@@ -319,6 +319,7 @@
      </div>
      <div class="modal_fix hide" id="hz_modal" style="display: block;"></div>
 </body>
+<script tyep="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script type="text/javascript" charset="utf-8">
   $('input[type="text"],textarea').on('click', function () {
 
@@ -330,6 +331,15 @@
 
         },400);
     });
+
+
+     $(".toast a").on("click",function(){
+           
+          $(".toast").hide();
+          $(".modal_fix").hide();      
+
+     })
+
 
     /*wx.config({"debug":false,"beta":false,"appId":"wx972466ss4185d5c297","nonceStr":"386087339-7141-4c81-bcba-7d5390c1590f3","timestamp":1531106409,"url":"http://buutest.buu-cn.com/buuportal/portal/zhaoshang/index.jsp","signature":"de89e257b9a7794dc77e252333a0ec49318df25a3d2","jsApiList":["onMenuShareTimeline","onMenuShareAppMessage"]});*/
     var wx_pic = "https://wechatapp.buu-cn.com/buuportal/portal/zhaoshang/img/logo.jpg";
@@ -376,6 +386,6 @@
   window.addEventListener('pagehide', function(event) {
       $("audio").pause();
   })
-
+   
 </script>
 </html>
